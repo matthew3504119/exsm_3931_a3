@@ -34,3 +34,28 @@ if money inserted is more than cost {
 }
 
 Update vending_inventory
+
+
+
+//Owner
+vending_inventory = {chips: 0, gummy_bears: 1, chocolate_bars:1}
+change = 52.00
+
+Owner is going to check inventory
+Look for the key
+
+While key is not found{
+    Keep looking for key
+}
+
+Unlock the vending Machine
+Empty the coin storage
+update change = 0.00
+
+Check inventory
+if inventory is low or empty{
+    then restock items
+}
+lock the machine
+finish inventory check
+update vending_inventory
