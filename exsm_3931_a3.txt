@@ -1,0 +1,36 @@
+money = 5.00
+vending_machine_content = { chips: 2.00, gummy_bears: 3.00, chocolate_bars: 4.00}
+vending_inventory = {chips: 5, gummy_bears: 10, chocolate_bars:0}
+change = 0
+choice = ""
+
+//Hungry Customers
+Cusomters arrive and look at choices and price
+
+Select choice
+while choice is not available, or if choice inventory is zero {
+    Show error message, and ask customers if they want to cancel
+    
+        if customer want to cancel{
+            then return change
+            else select another choice
+        }
+}
+
+Insert money
+while money is insufficient {
+    Show error message, and ask customers if they want to insert more money or cancel
+        if customer want to cancel{
+            then return change
+            else insert more money
+        }
+}
+
+Machine dispenses product
+Customer picks up product
+
+if money inserted is more than cost {
+    return change to customer
+}
+
+Update vending_inventory
